@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: rgba(39, 122, 140, 1); 
+    --color-2: rgba(242, 200, 75, 1); 
+    --color-3: rgba(242, 208, 145, 0.3); 
+    --color-4: rgba(217, 138, 41, 1); 
+    --color-5: rgba(140, 53, 3, 1); 
+}
+
+body {
+    height: 100vh;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ main {
+    max-width: fit-content;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+ header {
+    background: var(--color-1)
+}
+ 
+ h1 {
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+}
+
+ .name {
+    color: var(--color-2);
+}
+
+ h2 {
+    color: #223240;
+    text-align: center;
+    padding: 1rem;
+}
+
+ header nav {
+    background: #223240;
+    display: flex;
+    list-style: none;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ header nav a {
+    color: aliceblue;   
+    text-decoration: none;
+    position: relative;
+    transition: all .25s ease;
+    font-size: 20px;
+}
+
+ header nav a::after {
+    content: "";
+    background: var(--color-2);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scalex(0);
+    transition: all .25s ease;
+}
+
+header nav a:hover {
+    color: var(--color-2);
+}
+
+header nav a:hover::after {
+    transform: scalex(1);
+}
+
+ .card1 {
+    grid-column: 1 / 2;
+}
+
+ .card2 {
+    grid-column: 2 / 3;
+    margin: 60px;
+}
+
+ ul {
+    padding: 40px 0;
+    margin: 0 40px;
+    justify-self: center;    
+}
+
+ li {
+    padding: 5px 0;
+}
+
+ .about-parent {
+    margin: 40px;
+    background-color: var(--color-3);
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+    border-radius: 30px;
+}
+
+ .about {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 40px 40px 40px;
+}
+
+ .par-about {
+    grid-column: 1 / 3;
+}
+
+ .img-about {
+    width: 100px;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+}
+
+ .img-ukr {
+    width: 200px;
+    grid-column: 1 / 2;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+}
+
+ .par-ukr {
+    grid-column: 2 / 4;
+}
+
+
+ footer {
+    color: aliceblue;
+    height: 100px;
+    background: var(--color-1);
+    padding: 2rem;
+    text-align: center;  
+}
+
+.par {
+    font-size: 24px;
+}
+ #lastModified {
+    color: var(--color-2);
+}
