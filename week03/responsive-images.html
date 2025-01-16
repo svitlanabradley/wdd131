@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="Responsive Images activity example page.">
+    <meta name="author" content="Svitlana Bradley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/landscape_1500750.webp" media="(min-width: 1000px)">
+                <source srcset="images/landscape_1000500.webp" media="(min-width: 500px)">
+                <img src="images/landscape_500250.webp" alt="Landscape" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>

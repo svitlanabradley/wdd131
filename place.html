@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <meta name="description" content="Country where I live.">
+    <meta name="author" content="Svitlana Bradley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ukraine</h1>
+    </header>
+
+    <main>
+        <div class="line"></div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/large_sunflower.webp" media="(min-width: 500px)">
+                <img src="images/sunflower_landscape_small.webp" alt="Sunflower Landscape" width="600" height="800">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td class="label">Area:</td>
+                    <td class="value">603,628 sq km</td>
+                </tr>
+                <tr>
+                    <td class="label">Population:</td>
+                    <td class="value">33,443,000</td>
+                </tr>
+                <tr>
+                    <td class="label">Capital:</td>
+                    <td class="value">Kyiv</td>
+                </tr>
+                <tr>
+                    <td class="label">Languages:</td>
+                    <td class="value">Ukrainian</td>
+                </tr>
+                <tr>
+                    <td class="label">Currency:</td>
+                    <td class="value">Hryvnia</td>
+                </tr>
+                <tr>
+                    <td class="label">Time Zone:</td>
+                    <td class="value">UTC+2</td>
+                </tr>
+                <tr>
+                    <td class="label">Calling Code:</td>
+                    <td class="value">+380</td>
+                </tr>
+                <tr>
+                    <td class="label">Internet TLD:</td>
+                    <td class="value">.ua</td>
+                </tr>          
+            </table>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/snowflake_icon.svg" alt="Weather img">
+            <table>
+                    <tr>
+                        <td class="label">Temperature:</td>
+                        <td class="value" id="temp">-10°C</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Conditions:</td>
+                        <td class="value">Snowing</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Wind:</td>
+                        <td class="value" id="wind">6 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Wind Chill:</td>
+                        <td class="value" id="windchill">N/A</td>
+                    </tr> 
+            </table>         
+        </section>
+    </main>
+
+    <footer>
+        <p class="par">©<span id="currentyear"></span> 🌻Svitlana Bradley🌻Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
