@@ -1,0 +1,142 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: small;
+}
+
+
+header {
+	background-color: rgb(15, 122, 199);
+	display: grid;
+    align-items: center;
+	padding: 20px;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+    color:#fff
+}
+
+h2, h3 {
+	padding-bottom: 10px;
+}
+
+nav {
+	background-color: rgb(15, 122, 199);
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+    display: none;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+    font-weight: 700;
+    position: relative;
+    transition: all .25s ease;
+}
+
+
+.navigation a:hover {
+	color: yellow;
+	font-size: large;
+}
+
+.active {
+	color: yellow;
+}
+
+#menu {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    background: none;
+    border: 0;
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: aliceblue;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.show a {
+	display: block;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+main div {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.temple-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(236, 230, 230);
+	padding: 10px;
+	height: 260px;
+}
+
+.label {
+	font-size: smaller;
+	color: rgb(5, 5, 107);
+}
+
+img {
+    width: 100%;
+    height: auto; 
+	margin-top: 1rem;
+	border: 1px solid rgba(0, 0, 0, .3);
+	box-shadow: 0 0 10px #333;
+	overflow: auto;
+}
+
+footer {
+    text-align: center;  
+    background-color: rgb(15, 122, 199);
+    padding: 20px;
+    color: #fff;
+}
+
+ .par {
+    font-size: 16px;
+}
