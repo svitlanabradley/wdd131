@@ -1,0 +1,111 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+header, footer {
+    text-align: center;  
+    background-color: rgb(15, 122, 199);
+    padding: 5px;
+    color: #fff;
+    font-size: small;
+}
+
+body {
+    font-family: "Noto Sans", serif;
+    max-width: 400px;
+}
+
+.frm {
+    background-color: lightgray;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: .9rem;
+    border-radius: 6px;
+}
+
+.frm label {
+    display: block;
+    align-items: center;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox label {
+    display: flex;
+}
+
+.frm select,
+.frm input[type="date"],
+.frm textarea,
+.frm input[type="text"] {
+    display: block;
+    border: none;
+    padding: .75rem;
+    width: 100%;
+}
+
+.frm input[type="radio"],
+.frm input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.optional {
+    color: rgb(19, 19, 144);
+    font-size: smaller;
+}
+
+.check {
+    font-style: italic;
+}
+
+.frm input[type="submit"] {
+    background-color: rgb(236, 233, 233);
+    border: 1px solid rgb(156, 154, 154);
+    padding: 0.8rem;
+    width: 100%;
+    font-size: large;
+    font-weight: 700;
+}
+
+.par {
+    font-size: 16px;
+}
+
+.review {
+    text-align: center;
+}
+
+.counter {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(15, 122, 199);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

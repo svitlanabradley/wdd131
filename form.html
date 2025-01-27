@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Svitlana Bradley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="frm">
+            
+            <label>Product Name<select name="product" id="productSelect" required>
+                <option value="">Choose a Product...</option>
+            </select></label>
+            <br>
+            
+            <div>Overall Rating</div>
+            <div class="radio">
+                <label>☆<input type="radio" name="rating" id="rating1" required></label>
+                <label>☆☆<input type="radio" name="rating" id="rating2" required></label>
+                <label>☆☆☆<input type="radio" name="rating" id="rating3" required></label>
+                <label>☆☆☆☆<input type="radio" name="rating" id="rating4" required></label>
+                <label>☆☆☆☆☆<input type="radio" name="rating" id="rating5" required></label>
+            </div>
+            <br>
+
+            <label>Date of Installation<input type="date" name="instalDate" id="instalDate" required></label>
+            <br>
+
+            <div>Which features did you find useful in the product?<br><span class="check">(Check all that apply)</span></div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="easeOfUse" id="easeOfUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+            </div>
+            <br>
+
+            <label>Written Review <span class="optional">(Optional)</span><textarea name="massage" rows="10"></textarea></label>
+            <br>
+            
+            <label>Your Name <span class="optional">(Optional)</span><input type="text" name="name" id="name"></label>
+            <br>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p class="par">©<span id="currentyear"></span> 🌻Svitlana Bradley🌻Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
